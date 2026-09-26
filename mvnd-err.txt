@@ -1,0 +1,18 @@
+Sep 26, 2026 1:01:02 AM org.jline.utils.Log logr
+WARNING: Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+[main] WARNING org.jline - Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+[main] WARNING org.mvndaemon.mvnd.client.DaemonParameters - Falling back to finding JAVA_HOME by running java executable available in PATH. You may want to avoid this time consuming task by setting JAVA_HOME environment variable or by passing java.home system property through command line or in one of mvnd configuration files.
+[main] WARNING org.mvndaemon.mvnd.common.OsUtils - java -XshowSettings:properties -version exited with -2147483606:
+
+Exception in thread "main" java.lang.IllegalStateException: Could not get value for Environment.JAVA_HOME from any of the following sources: value: java.home, property java.home in C:\Users\omita\.bob\playground\backend\.mvn\mvnd.properties, property java.home in C:\Users\omita\.m2\mvnd.properties, property java.home in C:\Users\omita\Downloads\maven-mvnd-1.0.5-windows-amd64\maven-mvnd-1.0.5-windows-amd64\conf\mvnd.properties, system property java.home, environment variable JAVA_HOME, java command
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue.couldNotgetValue(DaemonParameters.java:681)
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue.lambda$orFail$8(DaemonParameters.java:656)
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue.get(DaemonParameters.java:691)
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue.get(DaemonParameters.java:686)
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue$1.get(DaemonParameters.java:753)
+	at org.mvndaemon.mvnd.client.DaemonParameters$EnvValue.asPath(DaemonParameters.java:712)
+	at org.mvndaemon.mvnd.client.DaemonParameters.javaHome(DaemonParameters.java:168)
+	at org.mvndaemon.mvnd.client.DaemonConnector.connect(DaemonConnector.java:100)
+	at org.mvndaemon.mvnd.client.DefaultClient.execute(DefaultClient.java:353)
+	at org.mvndaemon.mvnd.client.DefaultClient.main(DefaultClient.java:171)
+	at java.base@22.0.2/java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit(LambdaForm$DMH)
