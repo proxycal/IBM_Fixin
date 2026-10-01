@@ -1,4 +1,4 @@
-# Debug-to-Fix Agent Project Plan
+# Debug-to-Fix Agent 
 
 ## Top-Level Overview
 
